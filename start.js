@@ -29,7 +29,7 @@ mongoose.connect(process.env.DATABASE, {
 mongoose.connection.on('error', err => {
   console.error(`Error → ${err.message}`);
 });
-reportController.create()
+reportController.create();
 
 app.set('port', process.env.PORT || 8080);
 const server = app.listen(app.get('port'), () => {

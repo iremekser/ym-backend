@@ -12,6 +12,6 @@ router.get('/:id', checkAuth, pollsterController.find);
 router.put('/:id', checkAuth, pollsterController.update);
 router.delete('/:id', checkAuth, pollsterController.delete);
 router.post('/', checkAuth, pollsterController.create);
-router.get('/', checkAuth, pollsterController.list);
+router.get('/', pollsterController.list);
 
 module.exports = router;

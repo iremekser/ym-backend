@@ -9,6 +9,6 @@ router.get('/:id', checkAuth, mediaController.find);
 router.put('/:id', checkAuth, mediaController.update);
 router.delete('/:id', checkAuth, mediaController.delete);
 router.post('/', checkAuth, mediaController.create);
-router.get('/', checkAuth, mediaController.list);
+router.get('/', mediaController.list);
 
 module.exports = router;

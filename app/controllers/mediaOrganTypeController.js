@@ -43,7 +43,7 @@ exports.create = async (req, res) => {
 exports.list = async (req, res) => {
   try {
     const mediaOrganType = await MediaOrganType.find({});
-    return res.status(200).json({ mediaOrganType });
+    res.status(200).json({ mediaOrganType });
   } catch (error) {
     return res.status(500).json({ ...error });
   }

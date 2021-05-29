@@ -12,7 +12,7 @@ router.get('/:id', checkAuth, surveyController.find);
 router.put('/:id', checkAuth, surveyController.update);
 router.delete('/:id', checkAuth, surveyController.delete);
 router.post('/', checkAuth, surveyController.create);
-router.get('/', checkAuth, surveyController.list);
+router.get('/', surveyController.list);
 
 
 
